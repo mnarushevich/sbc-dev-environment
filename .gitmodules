@@ -1,0 +1,15 @@
+[submodule "auth-service"]
+    path = auth-service
+    url = https://github.com/maksim-narushevich/siam-brew-coffee-auth-service
+
+[submodule "delivery-service"]
+    path = delivery-service
+    url = https://github.com/maksim-narushevich/siam-brew-coffee-delivery-service
+
+[submodule "payment-service"]
+    path = payment-service
+    url = https://github.com/maksim-narushevich/siam-brew-coffee-payment-service
+
+[submodule "stock-service"]
+    path = stock-service
+    url = https://github.com/maksim-narushevich/siam-brew-coffee-stock-service
