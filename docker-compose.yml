@@ -1,0 +1,19 @@
+services:
+    neo4j:
+        image: neo4j:latest
+        container_name: sbc_neo4j
+        platform: linux/x86_64
+        ports:
+            - "7688:7687"
+        environment:
+            NEO4J_AUTH: neo4j/sbcpsmk123g
+        volumes:
+            - ./services/neo4j/data:/data
+            - ./services/neo4j/logs:/logs
+            - ./services/neo4j/import:/import
+            - ./services/neo4j/plugins:/plugins
+        networks:
+            - sbc
+networks:
+    sbc:
+        driver: bridge
